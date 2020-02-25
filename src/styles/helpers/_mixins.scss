@@ -1,0 +1,46 @@
+@mixin text ($size, $color, $font) {
+    font-size: $size;
+    color: $color;
+    font-family: $font;
+}
+
+@mixin orange-btn {
+    border: none;
+    background: $p-2;
+    @include text (12px, $base-light, $pop-semi);
+    padding: 12px 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@mixin blue-btn {
+    
+    border: none;
+    background: $d1-1;
+    @include text (12px, $base-light, $pop-semi);
+    padding: 12px 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@mixin paragraph {
+    @include text (14px, $d1-4, $pop-reg);
+}
+
+@mixin h1 {
+    @include text(35px, $d3-4, $pop-bold);
+}
+
+@mixin h2 {
+    @include text(33px, $d2-4, $pop-med);
+}
+
+@mixin quotation {
+    @include text(17px, $d1-1, $pop-reg);
+}
+
+@mixin subtitle {
+    
+}

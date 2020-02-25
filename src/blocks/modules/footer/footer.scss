@@ -1,0 +1,122 @@
+.footer-bg {
+    background: $p-1;
+    padding: 10px 0px;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-img {
+        margin-right: 10px;
+    }
+
+    .site {
+        @include text (26px, $base-light, $pop-light);
+
+        span {
+            @include text (26px, $p-3, $pop-bold);
+        }
+    }
+
+    .sub-site {
+        @include text (12px, $base-light, $sans);
+    }
+
+    .line-grey {
+        background: $l3-1;
+        margin-top: 25px;
+    }
+
+    .list-title {
+        @include text (16px, $base-light, $pop-med);
+        margin-bottom: 35px;
+        margin-top: 55px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            @include text (13px, $base-light, $pop-reg);
+        }
+    }
+
+    .menu-list {
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    @include text (10px, $base-light, $pop-semi);
+                    margin-right: 40px;
+                    position: relative;
+                }
+
+                .blog {
+                    margin-right: 0px;
+                }
+
+                .hover:after {
+                    content: '';
+                    height: 2px;
+                    width: 0%;
+                    left: 0;
+                    bottom: 0;
+                    background: $base-light;
+                    position: absolute;
+                    transition: .4s;
+                }
+
+                .hover:hover::after {
+                    width: 100%;
+                    border-right: 2px solid $base-light;
+                    transition: .4s;
+                }
+
+
+
+
+
+            }
+        }
+
+    }
+    .list-text {
+        li {
+            margin-bottom: 10px;
+        }
+        
+    }
+    .footer-footer {
+        margin-top: 45px;
+        p {
+            @include text(13px, $base-light, $pop-med);
+        }
+        .social-icon-footer {
+            i {
+                padding: 15px 18px;
+                border: 1px solid $base-light;
+                border-radius: 50%;
+                font-size: 15px;
+            }
+        }
+        .social-icon {
+            font-size: 25px;
+            i {
+                background: $base-light;
+                padding: 8px 8px;
+                margin-right: 5px;
+                border-radius: 50%;
+                color: $p-1;
+            }
+        }
+        .number {
+            @include text (17px,$base-light,$pop-semi);
+        }
+
+
+
+    }
+}

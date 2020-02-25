@@ -1,0 +1,121 @@
+.headerAll {
+  background-color: $p-1;
+  height: 110px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.log {
+  height: 65px;
+}
+.logo {
+  height: 110px;
+}
+
+.ul {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  margin: 0;
+  margin-left: -30px;
+}
+.ul li a {
+  color: white;
+  
+  
+  font-family: "Poppins - Semi Bold";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.blue-btn {
+  @include blue-btn;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+.orange-btn {
+  @include orange-btn;
+}
+
+.burger,
+.burger::after,
+.burger::before {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+.burger::after {
+  content: "";
+  top: -8px;
+}
+.burger::before {
+  content: "";
+  top: 8px;
+}
+.bu {
+  margin-left: 25px;
+  margin-top: 18px;
+}
+
+li:hover {
+  border-radius: 8px;
+  padding: 6px 20px;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+}
+
+// .ul a:before,
+// .ul a:after {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   opacity: 0;
+//   box-sizing: border-box;
+// }
+// .ul a:before {
+//   bottom: 0;
+//   left: 0;
+//   border-left: 1px solid white;
+//   border-top: 1px solid white;
+//   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+// }
+// .ul a:after {
+//   top: 0;
+//   right: 0;
+//   border-right: 1px solid white;
+//   border-bottom: 1px solid white;
+//   transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+// }
+// .ul a:hover:before,
+// .ul a:hover:after{
+//   height: 100%;
+//   width: 100%;
+//   opacity: 1;
+// }
+// .ul a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+// .ul a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+// .ul a:hover {background: rgba(255,255,255,.2);}
+
+@media (max-width: 576px) {
+  .headerAll {
+    background-color: $p-1;
+    height: 550px;
+    .logo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .imghead {
+      width: 100%;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .menn li {
+      flex-direction: column;
+    }
+  }
+}

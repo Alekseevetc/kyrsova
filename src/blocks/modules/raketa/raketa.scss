@@ -1,0 +1,151 @@
+.discount-bg {
+  background: url(../../../img/discount-bg.png) $p-1 center center no-repeat;
+  padding-top: 60px;
+  height: 560px;
+  .title {
+    text-align: center;
+    .quotation {
+      color: $base-light;
+    }
+    h2 {
+      @include h2;
+      color: $base-light;
+    }
+    .pop {
+      margin: 40px auto;
+      width: 620px;
+      height: 52px;
+      color: $base-light;
+      font-family: $pop-reg;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+
+  .left-block {
+    padding: 0;
+  }
+  .right-block {
+    padding: 0;
+  }
+  .kvadrat {
+    margin-top: 40px;
+  }
+  .discount-blocks {
+    box-shadow: 0 4px 30px rgba(202, 202, 202, 0.55);
+
+    background: $base-light;
+    display: grid;
+    grid-template-areas:
+      "block-1 block-2"
+      "block-3 block-4";
+    position: relative;
+    padding: 50px 40px;
+    height: 100%;
+    .block-1 {
+      grid-area: block-1;
+      border-right: 1px solid $l1-4;
+      border-bottom: 1px solid $l1-4;
+    }
+    .block-2 {
+      grid-area: block-2;
+      border-bottom: 1px solid $l1-4;
+    }
+    .block-3 {
+      grid-area: block-3;
+      border-right: 1px solid $l1-4;
+    }
+    .block-4 {
+      grid-area: block-4;
+    }
+    .number {
+      margin-top: 35px;
+      @include text(35px, $p-2, $pop-bold);
+    }
+    .paragraph {
+      @include paragraph;
+    }
+    .page {
+      @include text(17px, $p-1, $pop-semi);
+      margin-bottom: 35px;
+    }
+  }
+  .blue-block {
+    box-shadow: 0 4px 30px rgba(202, 202, 202, 0.8);
+    background: $d1-1;
+    padding: 23px;
+    height: 100%;
+    .border-block {
+      border: 1px dashed $d2-1;
+      border-width: 3px;
+      height: 100%;
+      border-radius: 10px;
+      padding: 40px 30px;
+      position: relative;
+
+      .block-star {
+        border: 1px dashed $base-light;
+        border-width: 3px;
+        border-radius: 10px;
+        padding: 25px 55px;
+        position: relative;
+        display: block;
+        .icon-1 {
+          position: absolute;
+          left: -15px;
+          top: -15px;
+        }
+        .icon-2 {
+          position: absolute;
+          right: -15px;
+          top: -15px;
+        }
+      }
+      .icon-3 {
+        position: absolute;
+        right: -55px;
+        bottom: 0;
+      }
+    }
+    .last-text {
+      @include text(18px, $base-light, $pop-reg);
+    }
+  }
+  .title-text {
+    @include text(25px, $base-light, $pop-semi);
+  }
+  .get {
+    @include text(24px, $base-light, $pop-med);
+    text-align: start;
+  }
+  .price {
+    @include text(62px, $p-3, $pop-semi);
+  }
+  .sub-price {
+    @include text(14px, $base-light, $pop-med);
+  }
+}
+
+.slider-bg {
+  margin-top: 300px;
+  padding: 70px 0px;
+  .quotation {
+    @include quotation;
+  }
+  h2 {
+    @include h2;
+    margin-bottom: 40px;
+  }
+  .paragraph {
+    @include paragraph;
+    margin-top: 30px;
+  }
+  .slider-name {
+    @include text(17px, $p-1, $pop-semi);
+  }
+  .data {
+    @include text(13px, $l1-4, $pop-med);
+  }
+}
+

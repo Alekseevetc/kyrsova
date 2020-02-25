@@ -1,0 +1,45 @@
+.works {
+    padding: 95px 0px 100px;
+    .title {
+        text-align: center;
+        .quotation {
+            @include quotation;
+        }
+        h2 {
+            @include h2;
+            margin-bottom: 55px;
+        }
+    }
+    .block {
+        text-align: center;
+        padding: 0px 20px;
+        position: relative;
+        .title-block {
+            @include text (17px,$base-dark,$pop-semi);
+            text-transform: uppercase;
+            margin-top: 35px;
+        }
+        .paragraph {
+            @include paragraph;
+        }
+        border-right: 1px solid $p-1;
+        .tr {
+            width: 30px;
+            height: 30px;
+            border: solid;
+            border-width: 1px 1px 0 0;
+            border-color: $p-1;
+            transform: rotate(45deg);
+            position: absolute;
+            right: -16px;
+            top: 50%;
+            margin-top: -25px;
+            background: #fff;
+        }
+    }
+    .block:nth-last-child(1){
+        border-right: 0px;
+    }
+    
+
+}
