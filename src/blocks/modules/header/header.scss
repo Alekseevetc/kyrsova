@@ -3,7 +3,7 @@
   height: 110px;
 }
 .container {
-  width: 1200px;
+  // width: 1200px;
   margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@
 }
 .logo {
   height: 110px;
+  width: 100%;
 }
 
 .ul {
@@ -23,8 +24,7 @@
 }
 .ul li a {
   color: white;
-  
-  
+
   font-family: "Poppins - Semi Bold";
   font-size: 12px;
   font-weight: 400;
@@ -100,22 +100,14 @@ li:hover {
 // .ul a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
 // .ul a:hover {background: rgba(255,255,255,.2);}
 
-@media (max-width: 576px) {
-  .headerAll {
-    background-color: $p-1;
-    height: 550px;
-    .logo {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .imghead {
-      width: 100%;
-      margin-top: 5px;
-      text-align: center;
-    }
-    .menn li {
-      flex-direction: column;
-    }
-  }
-}
+// @media (max-width: 1200px) {
+//   .headerAll {
+//     height: 110px;
+//   }
+//   .menn {
+//     margin-left: 215px;
+//   }
+//   .abtn {
+//     margin-right: 15px;
+//   }
+// }

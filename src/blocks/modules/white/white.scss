@@ -1,7 +1,7 @@
 .white {
-  width: 1200px;
+  
   height: 550px;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 .foto {
   // width: 600px;
@@ -17,8 +17,19 @@
 .p2 {
   margin-top: 25px;
 }
-@media (maxwidth: 768px) {
+
+@media (max-width: 990px) {
   .foto {
-    background-image: url(../../../img/mash.png);
+    text-align: center;
   }
+  .fotka {
+    margin-top: 35px;
+  }
+  .white {
+    height: 1000px;
+  }
+  .textt {
+    margin-top: 35px;
+  }
+ 
 }
